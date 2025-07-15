@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gemini Folders</title>
+  <link rel="stylesheet" type="text/css" href="sidepanel.css">
+</head>
+<body>
+  <div class="header-section">
+    <div class="title-bar">
+      <div class="menu-icon"></div>
+      <span>Folder List</span>
+      <span class="dropdown-arrow"></span>
+      <div class="search-icon"></div>
+    </div>
+    <div class="action-buttons">
+        <button id="new-folder-btn" class="icon-button" title="Create New Folder"><img src="icons/folder-plus.png" alt="New Folder"></button>
+        <button id="search-folder-btn" class="icon-button" title="Search Folders"><img src="icons/search.png" alt="Search"></button>
+    </div>
+  </div>
+
+  <div class="filter-section">
+    <input type="text" id="filter-input" placeholder="Filter Folders...">
+  </div>
+
+  <div id="create-new-section" style="display: none;">
+    <h2>Create New Folder</h2>
+    <div class="input-group">
+        <input type="text" id="new-folder-name-input" placeholder="Enter folder name">
+        <button id="save-new-folder-btn">Save</button>
+    </div>
+    <h3>Select Tabs:</h3>
+    <div id="tabs-list">
+      </div>
+    <button id="cancel-create-btn">Cancel</button>
+  </div>
+
+  <div id="folder-display-section">
+    <ul id="saved-folders-list">
+      </ul>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

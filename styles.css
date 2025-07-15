@@ -1,0 +1,234 @@
+body {
+  font-family: 'Google Sans', 'Roboto', Arial, sans-serif; /* ใช้ฟอนต์ที่ใกล้เคียง */
+  width: 320px; /* ปรับความกว้างให้เหมาะสม */
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa; /* สีพื้นหลังอ่อนๆ */
+  color: #3c4043; /* สีข้อความหลัก */
+}
+
+/* Header Section */
+.header-section {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.menu-icon, .search-icon {
+  font-size: 1.3em;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: #5f6368;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-start; /* จัดปุ่มไปทางซ้าย */
+  gap: 10px; /* ระยะห่างระหว่างปุ่ม */
+  padding-top: 5px;
+}
+
+.icon-button {
+  background-color: #e8f0fe; /* สีพื้นหลังปุ่ม */
+  border: 1px solid #d2e3fc; /* สีขอบปุ่ม */
+  border-radius: 8px; /* ทำให้ปุ่มโค้งมน */
+  width: 40px; /* กำหนดขนาดปุ่ม */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0; /* ลบ padding เริ่มต้น */
+}
+
+.icon-button:hover {
+  background-color: #d2e3fc;
+}
+
+.icon-button img {
+  width: 24px; /* ขนาดไอคอนในปุ่ม */
+  height: 24px;
+}
+
+/* Filter Section */
+.filter-section {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+#filter-input {
+  width: calc(100% - 20px); /* ลบ padding */
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box; /* รวม padding ในความกว้าง */
+  color: #3c4043;
+}
+
+#filter-input::placeholder {
+  color: #80868b;
+}
+
+/* Create New Section */
+#create-new-section {
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+#create-new-section h2 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #202124;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#new-folder-name-input {
+  flex-grow: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#save-new-folder-btn, #cancel-create-btn {
+  padding: 8px 12px;
+  background-color: #1a73e8; /* สีน้ำเงินสไตล์ Google */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#save-new-folder-btn:hover, #cancel-create-btn:hover {
+  background-color: #185abc;
+}
+
+#tabs-list {
+  max-height: 150px; /* จำกัดความสูงของรายการแท็บ */
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#tabs-list li {
+  list-style: none;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #5f6368;
+}
+
+#tabs-list li:last-child {
+  border-bottom: none;
+}
+
+#tabs-list li input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1); /* ทำให้ checkbox ใหญ่ขึ้นเล็กน้อย */
+}
+
+/* Folder Display Section */
+#folder-display-section {
+  padding: 10px 15px;
+}
+
+#saved-folders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#saved-folders-list li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* จัดเนื้อหาให้กระจาย */
+  font-weight: 500;
+  color: #202124;
+}
+
+#saved-folders-list li .folder-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* ให้ข้อมูลโฟลเดอร์ขยายพื้นที่ได้ */
+}
+
+#saved-folders-list li .folder-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+#saved-folders-list li .folder-actions {
+    display: flex;
+    gap: 5px; /* ระยะห่างระหว่างปุ่มใน action */
+}
+
+
+#saved-folders-list li button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-folder-btn {
+  background-color: #e6f4ea; /* สีเขียวอ่อน */
+  color: #1e8e3e; /* สีเขียวเข้ม */
+}
+
+.open-folder-btn:hover {
+  background-color: #d0f8d9;
+}
+
+.delete-folder-btn {
+  background-color: #fce8e6; /* สีแดงอ่อน */
+  color: #d93025; /* สีแดงเข้ม */
+}
+
+.delete-folder-btn:hover {
+  background-color: #fae0df;
+}
+
+/* เพิ่ม icon สำหรับปุ่มในรายการโฟลเดอร์ */
+.folder-action-icon {
+    width: 18px;
+    height: 18px;
+}

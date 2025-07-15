@@ -1,0 +1,235 @@
+body {
+  font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
+  width: 320px; /* Standard side panel width */
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #3c4043;
+}
+
+/* Header Section */
+.header-section {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.menu-icon, .search-icon {
+  font-size: 1.3em;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 0.8em;
+  color: #5f6368;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.icon-button {
+  background-color: #e8f0fe;
+  border: 1px solid #d2e3fc;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease; /* Smooth hover */
+}
+
+.icon-button:hover {
+  background-color: #d2e3fc;
+}
+
+.icon-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Filter Section */
+.filter-section {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+#filter-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  color: #3c4043;
+}
+
+#filter-input::placeholder {
+  color: #80868b;
+}
+
+/* Create New Section */
+#create-new-section {
+  padding: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dadce0;
+}
+
+#create-new-section h2 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #202124;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#new-folder-name-input {
+  flex-grow: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+#save-new-folder-btn, #cancel-create-btn {
+  padding: 8px 12px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+#save-new-folder-btn:hover, #cancel-create-btn:hover {
+  background-color: #185abc;
+}
+
+#tabs-list {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#tabs-list li {
+  list-style: none;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #5f6368;
+}
+
+#tabs-list li:last-child {
+  border-bottom: none;
+}
+
+#tabs-list li input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* Folder Display Section */
+#folder-display-section {
+  padding: 10px 15px;
+}
+
+#saved-folders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#saved-folders-list li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #202124;
+}
+
+#saved-folders-list li .folder-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#saved-folders-list li .folder-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+#saved-folders-list li .folder-actions {
+    display: flex;
+    gap: 5px;
+}
+
+#saved-folders-list li button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.open-folder-btn {
+  background-color: #e6f4ea;
+  color: #1e8e3e;
+}
+
+.open-folder-btn:hover {
+  background-color: #d0f8d9;
+}
+
+.delete-folder-btn {
+  background-color: #fce8e6;
+  color: #d93025;
+}
+
+.delete-folder-btn:hover {
+  background-color: #fae0df;
+}
+
+.folder-action-icon {
+    width: 18px;
+    height: 18px;
+}

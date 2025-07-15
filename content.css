@@ -1,0 +1,45 @@
+/* content.css */
+
+#gemini-folders-floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* ปรับขนาดให้เป็นสี่เหลี่ยมผืนผ้า */
+    width: auto; /* ความกว้างจะปรับตามเนื้อหา */
+    min-width: 120px; /* กำหนดความกว้างขั้นต่ำ */
+    height: 48px; /* กำหนดความสูง */
+    padding: 0 16px; /* เพิ่ม padding ด้านข้าง */
+    border-radius: 24px; /* ทำให้โค้งมนมากยิ่งขึ้น (ครึ่งหนึ่งของความสูง) */
+    background-color: #e8f0fe; /* สีพื้นหลังอ่อนๆ คล้าย Google */
+    color: #202124; /* สีข้อความเข้ม */
+    border: 1px solid #d2e3fc; /* เพิ่มขอบบางๆ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาที่ดูนุ่มนวลขึ้น */
+    display: flex;
+    align-items: center; /* จัดเรียงแนวตั้งกึ่งกลาง */
+    justify-content: center; /* จัดเรียงแนวนอนกึ่งกลาง */
+    gap: 8px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    font-family: 'Google Sans', 'Roboto', sans-serif; /* ใช้ฟอนต์ที่คล้าย Google */
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#gemini-folders-floating-button:hover {
+    background-color: #d2e3fc; /* สีเข้มขึ้นเมื่อ hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* เงาเข้มขึ้นเมื่อ hover */
+    transform: translateY(-2px); /* ยกขึ้นเล็กน้อยเมื่อ hover */
+}
+
+#gemini-folders-floating-button:active {
+    transform: translateY(0); /* กลับมาตำแหน่งเดิมเมื่อคลิก */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+/* สไตล์สำหรับข้อความภายในปุ่ม */
+#gemini-folders-floating-button .floating-button-text {
+    color: #202124; /* สีข้อความ */
+    white-space: nowrap; /* ป้องกันข้อความขึ้นบรรทัดใหม่ */
+}
